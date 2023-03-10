@@ -5,8 +5,8 @@ import SmallCard from '../Components/SmallCard';
 const Food = () => {
     const [detail,setDetail]=useState([])
     useEffect(()=>{
-        // fetch("http://localhost:4000/")
-        fetch("https://node-blog-3n9c.onrender.com/")
+        fetch("http://localhost:6600/")
+        // 
         .then(res=>(res.json()))
         .then((res)=>setDetail(res))
     },[])
