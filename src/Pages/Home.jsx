@@ -7,10 +7,11 @@ import SmallCard from "../Components/SmallCard";
 const Home = () => {
     const [detail,setDetail]=useState([])
     useEffect(()=>{
-        // fetch("http://localhost:4000/")
-        fetch("https://node-blog-3n9c.onrender.com/")
+        fetch("https://blog-backend-mdq3.onrender.com")
+        
         .then(res=>(res.json()))
-        .then((res)=>setDetail(res))
+        .then((detail)=>setDetail(detail))
+        .catch((error)=>console.log(error))
     },[])
     console.log(detail)
     return (
@@ -21,7 +22,7 @@ const Home = () => {
                         <Link to="/Technology">
                             {" "}
                             <img
-                                src={"https://www.finance-monthly.com/Finance-Monthly/wp-content/uploads/2017/07/top-new-innovation-technology.jpg"}
+                                src={"https://www.rackspace.com/sites/default/files/2022-06/APPLICATION-600x400.png"}
                                 alt="not found"
                             />
                         </Link>

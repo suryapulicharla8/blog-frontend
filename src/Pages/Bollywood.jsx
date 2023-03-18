@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react'
+import React, {useState, useEffect } from 'react'
 
 import Card from '../Components/Card'
 // import SmallCard from '../Component/SmallCard';
@@ -7,10 +7,11 @@ import SmallCard from '../Components/SmallCard'
 const Bollywood = () => {
     const [detail,setDetail]=useState([])
     useEffect(()=>{
-        fetch("http://localhost:6600/")
+        fetch("https://blog-backend-mdq3.onrender.com")
         
         .then(res=>(res.json()))
-        .then((res)=>setDetail(res))
+        .then((detail)=>setDetail(detail))
+        .catch((error)=>console.log(error))
     },[])
     console.log(detail)
     return (
