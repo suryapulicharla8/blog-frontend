@@ -7,10 +7,10 @@ import SmallCard from '../Components/SmallCard'
 const Bollywood = () => {
     const [detail,setDetail]=useState([])
     useEffect(()=>{
-        fetch("https://blog-backend-mdq3.onrender.com")
+        fetch("https://blog-backend-mdq3.onrender.com/bollywood")
         
         .then(res=>(res.json()))
-        .then((detail)=>setDetail(detail))
+        .then((res)=>setDetail(res))
         .catch((error)=>console.log(error))
     },[])
     console.log(detail)

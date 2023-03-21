@@ -6,7 +6,7 @@ export const Technology = () => {
     // const [detail] = useContext(store);
     const [detail,setDetail]=useState([])
     useEffect(()=>{
-        fetch("https://blog-backend-mdq3.onrender.com")
+        fetch("https://blog-backend-mdq3.onrender.com/technology")
         
         .then(res=>(res.json()))
         .then((detail)=>setDetail(detail))

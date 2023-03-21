@@ -5,7 +5,7 @@ import SmallCard from '../Components/SmallCard';
 const Food = () => {
     const [detail,setDetail]=useState([])
     useEffect(()=>{
-        fetch("https://blog-backend-mdq3.onrender.com")
+        fetch("https://blog-backend-mdq3.onrender.com/food")
         // 
         .then(res=>(res.json()))
         .then((detail)=>setDetail(detail))
