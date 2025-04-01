@@ -16,6 +16,7 @@ function App() {
   return (
     <div className="App">
         <Header />
+        <h1>CLONE THE REPO AND USING PUSH AND PULL COMMANDS</h1>
         <BrowserRouter>
           <Nav />
           <Routes>
